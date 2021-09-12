@@ -70,7 +70,7 @@ def solve_equation(a, b, c):
             print("equation has one root: x_1 = ", find_interval(x_1 - 1, x_1, left, a, b, c))
 
         elif f(x_1, a, b, c) > epsilon and f(x_2, a, b, c):
-            print("equation has one root: x_1 = ", find_interval(x_1 - 1, x_1, left, a, b, c))
+            print("equation has three roots: x_1 = ", find_interval(x_1 - 1, x_1, left, a, b, c))
             print("x_2 = ", find_interval(x_2, x_2 + 1, right, a, b, c))
             print("x_3 = ", bisectional_root_search(x_1, x_2, a, b, c))
 
